@@ -12,7 +12,7 @@ This document captures ambiguities, assumptions, and open questions that require
 
 **Q1.1**: What is the initial catalog size at MVP launch?
 
-- **Status**: ⚠️ Needs Answer
+- **Status**: ✅ Decided
 - **Impact**: High - affects database seeding, testing, and marketing strategy
 - **Options**:
   - Option A: 50-100 unique designs (minimal viable catalog)
@@ -21,9 +21,11 @@ This document captures ambiguities, assumptions, and open questions that require
 - **Recommendation**: Start with 100-150 designs to validate product-market fit
 - **Decision By**: Week 1 of development
 
+↪️ **Decision**: Option A 50-100 unique designs (minimal viable catalog)
+
 **Q1.2**: Will products be print-on-demand or pre-stocked inventory?
 
-- **Status**: ⚠️ Needs Answer
+- **Status**: ✅ Decided
 - **Impact**: High - affects fulfillment workflow, inventory management, and financial model
 - **Options**:
   - Option A: Print-on-demand (lower risk, higher per-unit cost, longer fulfillment)
@@ -32,9 +34,11 @@ This document captures ambiguities, assumptions, and open questions that require
 - **Recommendation**: Start with print-on-demand to minimize risk, transition to hybrid based on sales data
 - **Decision By**: Week 1 of development
 
+↪️ **Decision**: Option A: Print-on-demand (lower risk, higher per-unit cost, longer fulfillment)
+
 **Q1.3**: How will band/artist licensing be handled?
 
-- **Status**: ⚠️ Needs Answer
+- **Status**: ✅ Decided
 - **Impact**: Critical - affects legal compliance and product availability
 - **Considerations**:
   - Official licensed merchandise vs fan art
@@ -44,17 +48,21 @@ This document captures ambiguities, assumptions, and open questions that require
 - **Recommendation**: Consult with entertainment attorney, establish clear licensing policy
 - **Decision By**: Before MVP launch
 
+↪️ **Decision**: Official licensed merchandise vs fan art
+
 **Q1.4**: What product categories beyond T-shirts will be offered?
 
-- **Status**: ✅ Assumed
+- **Status**: ✅ Decided
 - **Assumption**: MVP focuses on T-shirts only; Phase 2+ may add hoodies, hats, posters
 - **Validation Needed**: Confirm with stakeholders
+
+↪️ **Decision**: T-shirts only - we can gather info about customer's preferences on new merchandise 
 
 ### 2. Pricing & Payments
 
 **Q2.1**: What is the target price range for T-shirts?
 
-- **Status**: ⚠️ Needs Answer
+- **Status**: ✅ Decided
 - **Impact**: Medium - affects positioning, marketing, and profit margins
 - **Market Research**:
   - Standard band T-shirts: $20-30
@@ -62,6 +70,8 @@ This document captures ambiguities, assumptions, and open questions that require
   - Exclusive collaborations: $50+
 - **Recommendation**: $25-45 range with most products at $30-35
 - **Decision By**: Week 2 of development
+
+↪️ **Decision**: We will keep a standard and premium price between $20 to $50
 
 **Q2.2**: Will international payments and currencies be supported at MVP?
 
@@ -71,7 +81,7 @@ This document captures ambiguities, assumptions, and open questions that require
 
 **Q2.3**: What is the refund/return policy?
 
-- **Status**: ⚠️ Needs Answer
+- **Status**: ✅ Decided
 - **Impact**: High - affects customer satisfaction and operational complexity
 - **Considerations**:
   - Return window (30 days, 60 days, 90 days)
@@ -81,11 +91,13 @@ This document captures ambiguities, assumptions, and open questions that require
 - **Recommendation**: 30-day return window, customer pays return shipping, no restocking fee
 - **Decision By**: Week 2 of development
 
+↪️ **Decision**: 30-day return window, customer pays return shipping, no restocking fee
+
 ### 3. Shipping & Fulfillment
 
 **Q3.1**: What shipping carriers and options will be offered?
 
-- **Status**: ⚠️ Needs Answer
+- **Status**: ✅ Decided
 - **Impact**: High - affects costs, delivery times, and customer satisfaction
 - **Options**:
   - USPS (economical, slower)
@@ -95,6 +107,8 @@ This document captures ambiguities, assumptions, and open questions that require
 - **Recommendation**: USPS for domestic standard, UPS for expedited
 - **Decision By**: Week 3 of development
 
+↪️ **Decision**: USPS for domestic standard, UPS for expedited - make customer know both offers
+
 **Q3.2**: What countries will be supported for shipping at MVP?
 
 - **Status**: ✅ Decided
@@ -103,7 +117,7 @@ This document captures ambiguities, assumptions, and open questions that require
 
 **Q3.3**: How will shipping costs be calculated?
 
-- **Status**: ⚠️ Needs Answer
+- **Status**: ✅ Decided
 - **Impact**: Medium - affects profitability and customer experience
 - **Options**:
   - Flat rate (e.g., $5.99 per order)
@@ -113,11 +127,13 @@ This document captures ambiguities, assumptions, and open questions that require
 - **Recommendation**: Flat $5.99 for MVP, free over $75
 - **Decision By**: Week 3 of development
 
+↪️ **Decision**: Weight-based calculated shipping - later free over $75 can be apply
+
 ### 4. Marketing & Customer Acquisition
 
 **Q4.1**: What is the customer acquisition strategy?
 
-- **Status**: ⚠️ Needs Answer
+- **Status**: ✅ Decided
 - **Impact**: High - determines marketing budget and launch success
 - **Channels to Consider**:
   - Social media advertising (Facebook, Instagram, TikTok)
@@ -129,9 +145,11 @@ This document captures ambiguities, assumptions, and open questions that require
 - **Recommendation**: Multi-channel approach with focus on social media and influencer partnerships
 - **Decision By**: Week 4 (before MVP launch)
 
+↪️ **Decision**: Multi-channel approach with focus on social media and influencer partnerships
+
 **Q4.2**: What is the pre-launch marketing timeline?
 
-- **Status**: ⚠️ Needs Answer
+- **Status**: ✅ Decided
 - **Impact**: High - affects launch momentum
 - **Milestones**:
   - 8 weeks before: Teaser campaign, build email list
@@ -140,6 +158,8 @@ This document captures ambiguities, assumptions, and open questions that require
   - Launch day: Press release, social media blitz
 - **Recommendation**: Start pre-launch marketing 8 weeks before MVP
 - **Decision By**: Week 1 of development
+
+↪️ **Decision**: Start pre-launch marketing 8 weeks before MVP
 
 ---
 
@@ -155,7 +175,7 @@ This document captures ambiguities, assumptions, and open questions that require
 
 **Q5.2**: What is the expected initial traffic volume?
 
-- **Status**: ⚠️ Needs Answer
+- **Status**: ✅ Decided
 - **Impact**: High - affects infrastructure sizing and costs
 - **Estimates Needed**:
   - Concurrent users
@@ -164,9 +184,11 @@ This document captures ambiguities, assumptions, and open questions that require
 - **Assumption**: 1,000 MAU, 50,000 monthly page views, 10-20 orders/day at launch
 - **Validation**: Adjust infrastructure based on actual traffic
 
+↪️ **Decision**: 1,000 MAU, 50,000 monthly page views, 10-20 orders/day at launch
+
 **Q5.3**: What is the disaster recovery plan?
 
-- **Status**: ⚠️ Needs Answer
+- **Status**: ✅ Decided
 - **Impact**: High - affects business continuity
 - **Considerations**:
   - Database backup frequency (daily, hourly)
@@ -175,6 +197,8 @@ This document captures ambiguities, assumptions, and open questions that require
   - Recovery Point Objective (RPO)
 - **Recommendation**: Daily automated backups, 30-day retention, <4 hour RTO, <1 hour RPO
 - **Decision By**: Week 2 of development
+
+↪️ **Decision**: Daily automated backups, 2 months retention, <6 hours RTO, <3 hours RPO
 
 ### 6. Data & Privacy
 
@@ -193,7 +217,7 @@ This document captures ambiguities, assumptions, and open questions that require
 
 **Q6.2**: How long will customer data be retained?
 
-- **Status**: ⚠️ Needs Answer
+- **Status**: ✅ Decided
 - **Impact**: Medium - affects storage costs and compliance
 - **Considerations**:
   - Active customer data: Indefinitely (or until account deletion)
@@ -202,6 +226,12 @@ This document captures ambiguities, assumptions, and open questions that require
   - Guest order data: 2 years
 - **Recommendation**: Above retention periods with automated cleanup
 - **Decision By**: Week 2 of development
+
+↪️ **Decision**:
+  - Customer data is retained according to activity and legal needs: active accounts are kept until deletion.
+  - Order history is stored for 7 years.
+  - Inactive accounts are removed after three years.
+  - Guest order data is deleted or anonymized after two years.
 
 ### 7. Integrations & Third-Party Services
 
@@ -218,6 +248,8 @@ This document captures ambiguities, assumptions, and open questions that require
 - **Platforms**: Instagram Shopping, Facebook Shops, Pinterest
 - **Recommendation**: Evaluate after MVP launch based on social media traffic
 
+↪️ **Decision**: *TBD*
+
 **Q7.3**: Will there be integration with accounting software?
 
 - **Status**: ⚠️ Needs Answer
@@ -225,6 +257,8 @@ This document captures ambiguities, assumptions, and open questions that require
 - **Options**: QuickBooks, Xero, manual export
 - **Recommendation**: Manual CSV export for MVP, API integration in Phase 2
 - **Decision By**: Week 4 of development
+
+↪️ **Decision**: *TBD*
 
 ---
 
@@ -234,7 +268,7 @@ This document captures ambiguities, assumptions, and open questions that require
 
 **Q8.1**: What is the brand identity and visual style?
 
-- **Status**: ⚠️ Needs Answer from UI/UX
+- **Status**: ✅ Decided
 - **Impact**: High - affects all design work
 - **Deliverables Needed**:
   - Logo and brand guidelines
@@ -244,6 +278,12 @@ This document captures ambiguities, assumptions, and open questions that require
   - Tone of voice
 - **Recommendation**: Align with music/band culture aesthetic
 - **Decision By**: Week 1 of development (design phase)
+
+↪️ **Decision**:
+  - Modern, music-culture–inspired visual identity (skull and blood ☠️🩸).
+  - Dark high-contrast colors (black&white base).
+  - Dark, gothic and intensitive typography
+  - Authentic imagery, and a confident, community-oriented tone of voice.
 
 **Q8.2**: Will there be a mobile app or just responsive web?
 
@@ -269,7 +309,7 @@ This document captures ambiguities, assumptions, and open questions that require
 
 **Q9.3**: What is the cart expiration policy?
 
-- **Status**: ⚠️ Needs Answer
+- **Status**: ✅ Decided
 - **Impact**: Low - affects user experience
 - **Options**:
   - No expiration (persist indefinitely)
@@ -277,6 +317,8 @@ This document captures ambiguities, assumptions, and open questions that require
   - 7-day expiration
 - **Recommendation**: 30-day expiration for logged-in users, 7-day for guest carts
 - **Decision By**: Week 2 of development
+
+↪️ **Decision** 30-day expiration for logged-in users, 7-day for guest carts
 
 ---
 
@@ -286,7 +328,7 @@ This document captures ambiguities, assumptions, and open questions that require
 
 **Q10.1**: What customer support channels will be offered?
 
-- **Status**: ⚠️ Needs Answer
+- **Status**: ✅ Decided
 - **Impact**: High - affects operational costs and customer satisfaction
 - **Options**:
   - Email support (ticketing system)
@@ -297,9 +339,11 @@ This document captures ambiguities, assumptions, and open questions that require
 - **Recommendation**: Email support + live chat (with chatbot) + comprehensive FAQ for MVP
 - **Decision By**: Week 3 of development
 
+↪️ **Decision**: Email support + live chat (with chatbot) + comprehensive FAQ for MVP
+
 **Q10.2**: What are the support hours?
 
-- **Status**: ⚠️ Needs Answer
+- **Status**: ✅ Decided
 - **Impact**: Medium - affects staffing
 - **Options**:
   - 24/7 support
@@ -308,18 +352,22 @@ This document captures ambiguities, assumptions, and open questions that require
 - **Recommendation**: Business hours for MVP with email ticket queue
 - **Decision By**: Week 3 of development
 
+↪️ **Decision**: Business hours
+
 **Q10.3**: What is the expected support ticket volume?
 
-- **Status**: ⚠️ Needs Estimate
+- **Status**: ✅ Decided
 - **Impact**: Medium - affects staffing and tool selection
 - **Assumptions**: 5-10% of orders generate support tickets, 50-100 tickets/month at MVP
 - **Validation**: Adjust staffing based on actual volume
+
+↪️ **Decision**: 5-10% of orders generate support tickets, 50-100 tickets/month at MVP
 
 ### 11. Content Management
 
 **Q11.1**: Who will create and manage blog content?
 
-- **Status**: ⚠️ Needs Answer for Phase 2
+- **Status**: ✅ Decided
 - **Impact**: Medium - affects Phase 2 planning
 - **Options**:
   - Dedicated content creator (hire or contract)
@@ -328,12 +376,16 @@ This document captures ambiguities, assumptions, and open questions that require
 - **Recommendation**: Contract content creator for initial content, evaluate ongoing model
 - **Decision By**: End of MVP phase
 
+↪️ **Decision**: Contract content creator for initial content, evaluate ongoing model
+
 **Q11.2**: What is the content publication frequency?
 
-- **Status**: ⚠️ Needs Answer for Phase 2
+- **Status**: ✅ Decided
 - **Impact**: Medium - affects content strategy
 - **Recommendation**: 2-3 blog posts per week
 - **Decision By**: End of MVP phase
+
+↪️ **Decision**: 2-3 blog posts per week
 
 ---
 
@@ -352,6 +404,8 @@ This document captures ambiguities, assumptions, and open questions that require
 - **Recommendation**: Consult with attorney and accountant
 - **Decision By**: Before MVP launch
 
+↪️ **Decision**: TBD
+
 **Q12.2**: What terms of service and policies are required?
 
 - **Status**: ⚠️ Needs Creation
@@ -365,12 +419,19 @@ This document captures ambiguities, assumptions, and open questions that require
 - **Recommendation**: Legal review of all policies before launch
 - **Decision By**: Week 6 of development
 
+↪️ **Decision**: TBD
+
 **Q12.3**: Are there age restrictions for purchasing?
 
 - **Status**: ⚠️ Needs Answer
 - **Impact**: Low - standard practice
 - **Recommendation**: 13+ to comply with COPPA, 18+ for creating account (or parental consent)
 - **Decision By**: Week 4 of development
+
+↪️ **Decision**:
+  - Content will be accessible to users aged 13 and older in compliance with COPPA.
+  - Content classified as 16–17 will be restricted to that age group with appropriate labeling.
+  - Account creation is limited to adults (18+) or minors with verified parental consent, and all 18+ content remains strictly age-gated.
 
 ---
 
@@ -391,6 +452,8 @@ This document captures ambiguities, assumptions, and open questions that require
 - **Recommendation**: Define budget with detailed breakdown
 - **Decision By**: Project kickoff
 
+↪️ **Decision**: TBD
+
 **Q13.2**: What are the revenue targets for Year 1?
 
 - **Status**: ⚠️ Needs Answer
@@ -401,6 +464,8 @@ This document captures ambiguities, assumptions, and open questions that require
   - Month 7-12 (Phase 2-3): $100,000-200,000 GMV
 - **Recommendation**: Set realistic targets based on market research
 - **Decision By**: Week 2 of development
+
+↪️ **Decision**: TBD
 
 **Q13.3**: What is the break-even timeline?
 
@@ -413,6 +478,8 @@ This document captures ambiguities, assumptions, and open questions that require
   - Growth rate
 - **Recommendation**: Develop financial model with break-even analysis
 - **Decision By**: Week 2 of development
+
+↪️ **Decision**: TBD
 
 ---
 
@@ -487,7 +554,7 @@ This document captures ambiguities, assumptions, and open questions that require
 ---
 
 **Document Status**: ✅ Active (update regularly as questions are answered)  
-**Last Updated**: November 21, 2024  
+**Last Updated**: January 21, 2026  
 **Version**: 1.0  
 **Owner**: Product Owner
 
