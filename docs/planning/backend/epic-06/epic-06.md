@@ -1,10 +1,17 @@
-# Epic 6: Checkout & Payment
+# Epic: Checkout & Payment
 
-> **Index**: [epics.md](../epics.md) · **User Stories**: [user-stories.md](../user-stories.md)
+**Epic Title**: Checkout & Payment
+**Epic Key**: EPIC-6
+**Summary**: Enable trusted checkout by validating totals server-side, processing Stripe payments, creating orders, and confirming completion.
+**Labels**: backend, checkout, payments
+**Priority**: Must Have
 
-**Problem Statement:** Orders cannot be placed or paid for: the current order endpoint is a bare CRUD write that trusts client-supplied totals, with no payment processing, stock checks, or confirmation.
+---
 
-**Objective:** Provide a real checkout and payment flow: collect shipping and billing addresses, process payments via Stripe, create orders server-side with validated totals and stock decrement, send a confirmation email, and support guest checkout.
+**Epic Description:**
+Problem Statement: Orders cannot be placed or paid for: the current order endpoint is a bare CRUD write that trusts client-supplied totals, with no payment processing, stock checks, or confirmation.
+
+Objective: Provide a real checkout and payment flow: collect shipping and billing addresses, process payments via Stripe, create orders server-side with validated totals and stock decrement, send a confirmation email, and support guest checkout.
 
 Included scope:
 - Checkout with shipping and billing address collection
@@ -24,7 +31,7 @@ Dependencies:
 - [Epic 1: Backend Foundation & Infrastructure](#epic-1-backend-foundation--infrastructure)
 - [Functional Requirements FR4](../../../requirements/functional-requirements.md)
 
-Acceptance criteria:
+Measurable success criteria:
 - Given a checkout with addresses, when the order is submitted, then shipping and billing addresses are captured.
 - Given a payment intent, when Stripe confirms the payment, then the order transitions to paid.
 - Given order line items, when the order is created, then the total is computed server-side and stock is decremented.
@@ -32,8 +39,4 @@ Acceptance criteria:
 
 ## User Stories
 
-- [US-MVP-BE-031: Checkout with Shipping & Billing Addresses](./user_story031.md)
-- [US-MVP-BE-032: Payment Processing with Stripe](./user_story032.md)
-- [US-MVP-BE-033: Server-Side Order Creation with Totals & Stock](./user_story033.md)
-- [US-MVP-BE-034: Order Confirmation Email](./user_story034.md)
-- [US-MVP-BE-035: Guest Checkout](./user_story035.md)
+- [All user stories](./user_story.md)

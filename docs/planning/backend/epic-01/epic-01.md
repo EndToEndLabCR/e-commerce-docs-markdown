@@ -1,10 +1,17 @@
-# Epic 1: Backend Foundation & Infrastructure
+# Epic: Backend Foundation & Infrastructure
 
-> **Index**: [epics.md](../epics.md) · **User Stories**: [user-stories.md](../user-stories.md)
+**Epic Title**: Backend Foundation & Infrastructure
+**Epic Key**: EPIC-1
+**Summary**: Establish a reliable backend runtime foundation across environments, persistence, logging, dependency wiring, migrations, and container execution.
+**Labels**: backend, foundational, infrastructure
+**Priority**: Must Have
 
-**Problem Statement:** The API has no consistent, environment-aware foundation for configuration, database connectivity, observability, dependency wiring, schema migrations, or deployment, which makes it unreliable to run across local, test, stage, and production environments.
+---
 
-**Objective:** Provide a stable backend foundation that boots the FastAPI app from environment-driven configuration, connects to the correct database engine, emits structured logs with correlation IDs, wires dependencies through a composition root, versions the schema with Alembic, and ships in a container.
+**Epic Description:**
+Problem Statement: The API has no consistent, environment-aware foundation for configuration, database connectivity, observability, dependency wiring, schema migrations, or deployment, which makes it unreliable to run across local, test, stage, and production environments.
+
+Objective: Provide a stable backend foundation that boots the FastAPI app from environment-driven configuration, connects to the correct database engine, emits structured logs with correlation IDs, wires dependencies through a composition root, versions the schema with Alembic, and ships in a container.
 
 Included scope:
 - Environment-driven configuration (per-environment YAML plus `.env` overrides)
@@ -24,17 +31,8 @@ Dependencies:
 - [Non-Functional Requirements](../../../requirements/non-functional-requirements.md)
 - [MVP Database Design](../../../database/v1_mvp_database_design.md)
 
-Acceptance criteria:
+Measurable success criteria:
 - Given a configured environment, when the API starts, then configuration is loaded from the correct environment source without hardcoded values.
 - Given an incoming request, when it is handled, then structured logs include a request ID and timestamp.
 - Given a persistence driver setting, when the engine is created, then the matching database (Postgres or SQLite) is used.
 - Given any new model, when a migration is generated, then Alembic metadata includes the model and the chain upgrades cleanly.
-
-## User Stories
-
-- [US-MVP-BE-001: App Bootstrap & Environment Configuration](./user_story001.md)
-- [US-MVP-BE-002: Async Database Connection & Engine Factory](./user_story002.md)
-- [US-MVP-BE-003: Structured JSON Logging with Correlation IDs](./user_story003.md)
-- [US-MVP-BE-004: Dependency Injection & Composition Wiring](./user_story004.md)
-- [US-MVP-BE-005: Database Schema Versioning with Alembic](./user_story005.md)
-- [US-MVP-BE-006: Containerized Deployment](./user_story006.md)
