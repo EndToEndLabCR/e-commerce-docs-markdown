@@ -5,6 +5,8 @@
 **Summary**: Enable trusted checkout by validating totals server-side, processing Stripe payments, creating orders, and confirming completion.
 **Labels**: backend, checkout, payments
 **Priority**: Must Have
+**Components**: Backend, Payments
+**Fix Version**: MVP-1
 
 ---
 
@@ -26,9 +28,9 @@ Excluded scope:
 - Multi-currency payments (Phase 3)
 
 Dependencies:
-- [Epic 5: Shopping Cart](#epic-5-shopping-cart)
-- [Epic 4: Product Catalog & Discovery](#epic-4-product-catalog--discovery)
-- [Epic 1: Backend Foundation & Infrastructure](#epic-1-backend-foundation--infrastructure)
+- [Epic 5: Shopping Cart](../EPIC-5-Shopping-Cart/epic.md)
+- [Epic 4: Product Catalog & Discovery](../EPIC-4-Product-Catalog-and-Discovery/epic.md)
+- [Epic 1: Backend Foundation & Infrastructure](../EPIC-1-Backend-Foundation-and-Infrastructure/epic.md)
 - [Functional Requirements FR4](../../../requirements/functional-requirements.md)
 
 Measurable success criteria:
@@ -36,7 +38,3 @@ Measurable success criteria:
 - Given a payment intent, when Stripe confirms the payment, then the order transitions to paid.
 - Given order line items, when the order is created, then the total is computed server-side and stock is decremented.
 - Given a successful order, when it is placed, then a confirmation email is sent.
-
-## User Stories
-
-- [All user stories](./user_story.md)

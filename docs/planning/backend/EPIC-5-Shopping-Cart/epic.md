@@ -5,6 +5,8 @@
 **Summary**: Implement cart capabilities for item collection, quantity management, computed totals, and user cart persistence.
 **Labels**: backend, cart, checkout-prep
 **Priority**: Must Have
+**Components**: Backend, Database
+**Fix Version**: MVP-1
 
 ---
 
@@ -25,8 +27,8 @@ Excluded scope:
 - Persisted guest carts (deferred)
 
 Dependencies:
-- [Epic 4: Product Catalog & Discovery](#epic-4-product-catalog--discovery)
-- [Epic 3: Authentication & Authorization](#epic-3-authentication--authorization)
+- [Epic 4: Product Catalog & Discovery](../EPIC-4-Product-Catalog-and-Discovery/epic.md)
+- [Epic 3: Authentication & Authorization](../EPIC-3-Authentication-and-Authorization/epic.md)
 - [Functional Requirements FR3](../../../requirements/functional-requirements.md)
 
 Measurable success criteria:
@@ -34,7 +36,3 @@ Measurable success criteria:
 - Given a cart, when the customer views it, then subtotal, tax, and total are computed server-side.
 - Given a cart line, when quantity is updated or the item removed, then totals reflect the change.
 - Given a logged-in user, when a new session starts, then the cart is restored from persistence.
-
-## User Stories
-
-- [All user stories](./user_story.md)

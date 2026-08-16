@@ -5,6 +5,8 @@
 **Summary**: Implement the core user account lifecycle with secure password storage to enable downstream auth and order flows.
 **Labels**: backend, accounts, identity
 **Priority**: Must Have
+**Components**: Backend, Database
+**Fix Version**: MVP-1
 
 ---
 
@@ -25,7 +27,7 @@ Excluded scope:
 - Admin user management (Epic 8)
 
 Dependencies:
-- [Epic 1: Backend Foundation & Infrastructure](#epic-1-backend-foundation--infrastructure)
+- [Epic 1: Backend Foundation & Infrastructure](../EPIC-1-Backend-Foundation-and-Infrastructure/epic.md)
 - [Functional Requirements FR1](../../../requirements/functional-requirements.md)
 
 Measurable success criteria:

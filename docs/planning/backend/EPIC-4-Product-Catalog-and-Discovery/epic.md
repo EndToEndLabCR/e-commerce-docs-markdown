@@ -5,6 +5,8 @@
 **Summary**: Deliver complete catalog management and discovery APIs for bands, products, variants, search, filtering, media, and referential integrity.
 **Labels**: backend, catalog, discovery
 **Priority**: Must Have
+**Components**: Backend, Database
+**Fix Version**: MVP-1
 
 ---
 
@@ -31,7 +33,7 @@ Excluded scope:
 - Wishlist (Phase 1)
 
 Dependencies:
-- [Epic 1: Backend Foundation & Infrastructure](#epic-1-backend-foundation--infrastructure)
+- [Epic 1: Backend Foundation & Infrastructure](../EPIC-1-Backend-Foundation-and-Infrastructure/epic.md)
 - [MVP Database Design](../../../database/v1_mvp_database_design.md)
 - [Functional Requirements FR2](../../../requirements/functional-requirements.md)
 
@@ -40,7 +42,3 @@ Measurable success criteria:
 - Given a search term, when the search endpoint is called, then matching products by band or name are returned.
 - Given filter criteria, when filtering is applied, then results honor all selected criteria.
 - Given a delete on a referenced record, when foreign keys are enforced, then the operation is blocked or handled gracefully.
-
-## User Stories
-
-- [All user stories](./user_story.md)

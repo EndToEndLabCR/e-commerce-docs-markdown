@@ -5,6 +5,8 @@
 **Summary**: Establish a backend quality baseline with layered automated testing plus enforced lint and static type checks.
 **Labels**: backend, quality, testing
 **Priority**: Must Have
+**Components**: Backend, Quality
+**Fix Version**: MVP-1
 
 ---
 
@@ -24,16 +26,12 @@ Excluded scope:
 - Hard coverage-enforcement gates (post-baseline)
 
 Dependencies:
-- [Epic 1: Backend Foundation & Infrastructure](#epic-1-backend-foundation--infrastructure)
-- [Epic 2: User & Account Management](#epic-2-user--account-management)
-- [Epic 4: Product Catalog & Discovery](#epic-4-product-catalog--discovery)
+- [Epic 1: Backend Foundation & Infrastructure](../EPIC-1-Backend-Foundation-and-Infrastructure/epic.md)
+- [Epic 2: User & Account Management](../EPIC-2-User-and-Account-Management/epic.md)
+- [Epic 4: Product Catalog & Discovery](../EPIC-4-Product-Catalog-and-Discovery/epic.md)
 - [Non-Functional Requirements](../../../requirements/non-functional-requirements.md)
 
 Measurable success criteria:
 - Given a value object or use case, when tests run, then behavior is verified including edge and failure cases.
 - Given the repositories and API, when integration tests run against SQLite, then CRUD and error paths are verified.
 - Given the codebase, when ruff and mypy run, then the configured rules pass with no new violations.
-
-## User Stories
-
-- [All user stories](./user_story.md)

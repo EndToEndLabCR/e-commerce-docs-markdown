@@ -5,6 +5,8 @@
 **Summary**: Provide complete post-checkout order handling, including lifecycle transitions, customer history, tracking, cancellation, and reorder.
 **Labels**: backend, orders, lifecycle
 **Priority**: Must Have
+**Components**: Backend, Database
+**Fix Version**: MVP-1
 
 ---
 
@@ -27,8 +29,8 @@ Excluded scope:
 - Returns and refunds workflow (V2)
 
 Dependencies:
-- [Epic 6: Checkout & Payment](#epic-6-checkout--payment)
-- [Epic 3: Authentication & Authorization](#epic-3-authentication--authorization)
+- [Epic 6: Checkout & Payment](../EPIC-6-Checkout-and-Payment/epic.md)
+- [Epic 3: Authentication & Authorization](../EPIC-3-Authentication-and-Authorization/epic.md)
 - [Functional Requirements FR5](../../../requirements/functional-requirements.md)
 
 Measurable success criteria:
@@ -36,7 +38,3 @@ Measurable success criteria:
 - Given a registered user, when orders are queried, then only their own orders are returned.
 - Given an unpaid, unshipped order, when the customer cancels, then the order is marked cancelled and stock is restored.
 - Given a past order, when the customer reorders, then a new order is created from the previous line items.
-
-## User Stories
-
-- [All user stories](./user_story.md)

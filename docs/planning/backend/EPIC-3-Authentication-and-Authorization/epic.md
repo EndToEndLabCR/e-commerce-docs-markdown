@@ -5,6 +5,8 @@
 **Summary**: Add secure login, token-based access control, account verification flows, and RBAC protection for customer and admin endpoints.
 **Labels**: backend, auth, security
 **Priority**: Must Have
+**Components**: Backend, Security
+**Fix Version**: MVP-1
 
 ---
 
@@ -28,8 +30,8 @@ Excluded scope:
 - Multi-factor authentication
 
 Dependencies:
-- [Epic 1: Backend Foundation & Infrastructure](#epic-1-backend-foundation--infrastructure)
-- [Epic 2: User & Account Management](#epic-2-user--account-management)
+- [Epic 1: Backend Foundation & Infrastructure](../EPIC-1-Backend-Foundation-and-Infrastructure/epic.md)
+- [Epic 2: User & Account Management](../EPIC-2-User-and-Account-Management/epic.md)
 - [Functional Requirements FR1](../../../requirements/functional-requirements.md)
 
 Measurable success criteria:
@@ -37,7 +39,3 @@ Measurable success criteria:
 - Given an invalid or expired token, when a protected endpoint is called, then a 401 response is returned.
 - Given a registered account, when the profile endpoint is called, then the caller receives only their own data.
 - Given an admin token, when an admin-only endpoint is called, then access is granted; a customer token is rejected with 403.
-
-## User Stories
-
-- [All user stories](./user_story.md)

@@ -5,6 +5,8 @@
 **Summary**: Add RBAC-protected administrative APIs for operational control over users, catalog, inventory, orders, and sales metrics.
 **Labels**: backend, admin, operations
 **Priority**: Must Have
+**Components**: Backend, Admin
+**Fix Version**: MVP-2
 
 ---
 
@@ -25,16 +27,12 @@ Excluded scope:
 - Advanced analytics and cohort reporting (Phase 2)
 
 Dependencies:
-- [Epic 3: Authentication & Authorization](#epic-3-authentication--authorization)
-- [Epic 4: Product Catalog & Discovery](#epic-4-product-catalog--discovery)
-- [Epic 7: Order Management](#epic-7-order-management)
+- [Epic 3: Authentication & Authorization](../EPIC-3-Authentication-and-Authorization/epic.md)
+- [Epic 4: Product Catalog & Discovery](../EPIC-4-Product-Catalog-and-Discovery/epic.md)
+- [Epic 7: Order Management](../EPIC-7-Order-Management/epic.md)
 - [Functional Requirements FR6](../../../requirements/functional-requirements.md)
 
 Measurable success criteria:
 - Given an admin token, when an admin endpoint is called, then access is granted; a non-admin token is rejected with 403.
 - Given admin privileges, when users, products, or orders are managed, then the admin can view and modify them.
 - Given order data, when the sales endpoint is queried, then total orders and revenue are returned.
-
-## User Stories
-
-- [All user stories](./user_story.md)
